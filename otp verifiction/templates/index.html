@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otp</title>
+</head>
+<body>
+    
+    <h2>Email OTP Verification</h2>
+    <form action="/sendOtp" method="post">
+        <label for="email"> Enter Your Email</label>
+        <input type="email" id="email" name="email" required> <br><br>
+        <button type="submit"> Send otp</button>
+    </form>
+    
+
+    <h2>Verify Otp</h2>
+    <form action="verifyotp" method="post">
+        <label for="otp">Enter OTP: </label>
+        <input type="text" id="otp" name="otp" required pattern="[0-9]{6}"> <br> <br>
+        <button type="submit">Verify otp</button>
+    </form>
+</body>
+</html>
